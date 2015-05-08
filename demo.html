@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Autogrow Demo</title>
+  <style>
+    form{
+      width: 600px;
+      margin:50px auto;
+      display: block;
+      outline: none;
+    }
+    textarea{
+      width: 100%;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+<h1>autogrow</h1>
+<p>A minimal/pure javascript function that gives the ability for a textarea to automatically grow and shrink dynamically with its content. </p>
+
+<p>Currently works for new lines only (.\n').</p>
+
+<p>*Use at your own risk :)</p>
+
+<a href="https://github.com/dimboiu/autogrow">More info</a>
+
+<form>
+  <textarea id='t1' rows="1" placeholder="Text here"></textarea>
+</form>
+<script src="autogrow.js"></script>
+<script>
+  var t1 = Autogrow('t1');
+</script>
+</body>
+</html>
